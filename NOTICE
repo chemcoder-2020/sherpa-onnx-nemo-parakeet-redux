@@ -1,0 +1,37 @@
+sherpa-onnx-nemo-parakeet-redux
+===============================
+
+A GitHub mirror of the Hugging Face repo:
+
+    https://huggingface.co/Codyfederer/sherpa-onnx-nemo-parakeet-redux
+
+Model lineage (all CC BY 4.0):
+
+  - nvidia/parakeet-tdt-0.6b-v3
+        Base model. Copyright NVIDIA Corporation.
+        https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+
+  - moondream/parakeet-redux
+        1.58-bit (ternary) version of the above. Copyright Moondream.
+        https://huggingface.co/moondream/parakeet-redux
+
+  - eschmidbauer/parakeet-redux-onnx
+        ONNX export of the ternary weights (4-bit MatMulNBits blocks that
+        reproduce -1/0/+1 exactly). Also mirrored at
+        github.com/chemcoder-2020/parakeet-redux-onnx
+
+  - Codyfederer/sherpa-onnx-nemo-parakeet-redux
+        The above repackaged in the sherpa-onnx NeMo TDT layout
+        (encoder + split decoder/joiner + tokens + test clips), published as
+        sherpa-onnx-nemo-parakeet-redux.tar.bz2. The bundle's own README
+        signs the conversion as "Vyvo".
+
+This mirror (github.com/chemcoder-2020/sherpa-onnx-nemo-parakeet-redux)
+contains a byte-identical copy of the bundle from the source repo above.
+The checksum was verified after download and against a fresh clone. The
+upstream model card is preserved verbatim in SOURCE-CARD.md.
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+You must give appropriate credit to NVIDIA, Moondream, eschmidbauer, and
+Codyfederer, provide a link to the license, and indicate if changes were
+made. No additional restrictions are imposed by this mirror.
